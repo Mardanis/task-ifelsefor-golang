@@ -4,24 +4,52 @@ import "fmt"
 
 func main() {
 
-	var name string
-	var email string
-	var hobby [2]string
+	// var judul string = "judul"
+	// var category [3]string
+	// var sinopsis string = "sinopsis"
 
-	fmt.Println("Selamat Datang di Signup Account")
-	fmt.Print("Masukkan Nama Anda :")
-	fmt.Scan(&name)
-	fmt.Print("Masukkan Hobby Anda :")
-	fmt.Scan(&hobby[0])
-	fmt.Print("Masukkan Hobby Anda :")
-	fmt.Scan(&hobby[1])
-	fmt.Print("Masukkan Email :")
-	fmt.Scan(&email)
+	// fmt.Println("Selamat Datang Di Komikmu")
+	// fmt.Print("Masukkan Judul Yang Ingin Dicari :")
+	// fmt.Scan(&judul)
+	// fmt.Print("Masukkan Category Yang Ingin Dicari :")
+	// fmt.Scan(&category[0])
+	// fmt.Print("Masukkan Category Yang Ingin Dicari :")
+	// fmt.Scan(&category[1])
+	// fmt.Print("Masukkan Category Yang Ingin Dicari :")
+	// fmt.Scan(&category[2])
+	// fmt.Print("Sinopsis :")
+	// fmt.Scan(&sinopsis)
 
-	fmt.Printf("Nama Anda adalah %s\n ", name)
-	fmt.Println("Hobby Anda adalah ", hobby)
-	for i := 0; i < len(hobby); i++ {
+	// fmt.Printf("Judul yang dicari %s\n ", judul)
+	// fmt.Println("Kateogri yang di ingingkan", category)
+	// for i := 0; i < len(category); i++ {
+	// 	fmt.Println(category[i])
+	// }
+	// fmt.Println("Isi Sipnosis", sinopsis)
+
+	var choice int
+
+	fmt.Println("Selamat Datang DI Komikmu")
+	fmt.Print("Masukkan pilihan Anda (1-5): ")
+	fmt.Scan(&choice)
+
+	if choice == 1 {
+		fmt.Println("Rimuru")
+		fmt.Println("Genre : fantasy, action, romance")
+	} else if choice == 2 {
+		fmt.Println("Luffy")
+		fmt.Println("Genre : fantasy, action, comedy")
+	} else if choice == 3 {
+		fmt.Println("Naruto")
+		fmt.Println("Genre : fantasy, action, romance, comedy")
+	} else if choice == 4 {
+		fmt.Println("Power Rangers")
+		fmt.Println("Genre : action, Mecha, School")
+	} else if choice == 5 {
+		fmt.Println("Ultraman	")
+		fmt.Println("Genre : action , Mecha, Monster")
+	} else {
+		fmt.Println("Pilihan tidak tersedia")
 	}
-	fmt.Println("Email Anda ", email)
 
 }
